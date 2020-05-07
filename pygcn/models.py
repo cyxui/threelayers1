@@ -4,7 +4,7 @@ from pygcn.layers import GraphConvolution
 
 
 class GCN(nn.Module):
-    def __init__(self, nfeat, nhid, nclass, dropout):
+    def __init__(self, nfeat, nhid, nhid1,nclass, dropout):
         super(GCN, self).__init__()
 
         self.gc1 = GraphConvolution(nfeat, nhid)
